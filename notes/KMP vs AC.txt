@@ -1,0 +1,16 @@
+A	B	A	C	A	B	A	D
+0	0	1	0	1	2	3	0
+
+
+ABABABABAD
+
+
+A	B	A	B	A	D
+0	0	1	2	3	0
+
+
+PAT N
+STRING M
+
+KMP = N*K + M
+AC  = N + M + K
