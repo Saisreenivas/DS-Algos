@@ -16,3 +16,5 @@ Algorithms and Datastructures
 - Lowest Common Ancestor(LCA) of a Binary Tree
 - Check if two tree are Identical or not.
 - Maximum Path Sum in a Binary Tree
+- Constructing Binary Tree using Inorder and Preorder Traversal
+- Constructing Binary Tree using Inorder and Postorder Traversal
