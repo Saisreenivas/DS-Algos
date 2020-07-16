@@ -1,12 +1,12 @@
 # DS-Algos
 > # Algorithms and Datastructures
-- #### [Substring In a String](##substring-in-a-string)
-- #### [Tree Traversal](##tree-traversal)
-- #### [Binary Tree](##binary-tree)
-- #### [Binary Search Tree](##binary-search-tree)
-- #### [Mixed Questions](##mixed-questions)
-- #### [Graphs](##graphs)
-- #### [Dynamic Programming](##dynamic-programming)
+- #### Substring In a String
+- #### Tree Traversal
+- #### Binary Tree
+- #### Binary Search Tree
+- #### Mixed Questions
+- #### Graphs
+- #### Dynamic Programming
 **********************************************************************************
 
 ## Substring In a String
