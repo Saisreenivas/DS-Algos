@@ -1,6 +1,12 @@
 # DS-Algos
 > # Algorithms and Datastructures
-
+- #### [Substring In a String](#substring-in-a-string)
+- #### [Tree Traversal](#tree-traversal)
+- #### [Binary Tree](#binary-tree)
+- #### [Binary Search Tree](#binary-search-tree)
+- #### [Mixed Questions](#mixed-questions)
+- #### [Graphs](#graphs)
+- #### [Dynamic Programming](#dynamic-programming)
 **********************************************************************************
 
 ## Substring In a String
@@ -50,18 +56,51 @@
 - Find a Pair with a Given Sum in Binary Search Tree(BST).
 - Binary Search Tree(BST) iterator
 - Size of the largest Binary Search Tree(BST) in a Binary Tree
-> #### Serialize and deserialize Binary Tree
+- Serialize and deserialize Binary Tree
 
 **********************************************************************************
 
 ## Mixed Questions
+- Binary Tree to Double Linked List
+- Find median in a stream of running integers.
+- K-th largest element in a stream.
+- Distinct numbers in Window.
+- K-th largest element in an unsorted array.
+- Flood-fill Algorithm
 
 **********************************************************************************
 
 ## Graphs
+- Clone a graph (Not that easy as it looks)
+- DFS
+- BFS
+- Detect A cycle in Undirected Graph/Directed Graph
+- Topo Sort
+- Number of islands (Do in Grid and Graph both)
+- Bipartite Check
+- SCC(using KosaRaju’s algo)
+- Djisktra’s Algorithm
+- Bellman Ford Algo
+- Floyd Warshall Algorithm
+- MST using Prim’s Algo
+- MST using Kruskal’s Algo
 
 **********************************************************************************
 
 ## Dynamic Programming
+- Max Product Subarray
+- Longest Increasing Subsequence
+- Longest Common Subsequence
+- 0-1 Knapsack
+- Edit Distance
+- Maximum sum increasing subsequence
+- Matrix Chain Multiplication
+- Maximum sum path in matrix, (count paths, and similar type do, also backtrack to find the maximum path)
+- Coin change
+- Subset Sum
+- Rod Cutting
+- Egg Dropping
+- Word Break
+- Palindrome Partitioning (MCM Variation)
 
 **********************************************************************************
