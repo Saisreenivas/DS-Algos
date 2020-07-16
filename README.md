@@ -1,6 +1,6 @@
 # DS-Algos
 > # Algorithms and Datastructures
-- #### Substring In a String
+1. [Substring In a String](#substring-in-a-string)
 - #### Tree Traversal
 - #### Binary Tree
 - #### Binary Search Tree
