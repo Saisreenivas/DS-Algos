@@ -32,9 +32,9 @@ public class RGBNumber {
 
     static String solve(int N, String S, String A){
         // Write your code here
-        PriorityQueue<Integer> red = new PriorityQueue(new Compara());
-        PriorityQueue<Integer> green = new PriorityQueue(new Compara());
-        PriorityQueue<Integer> blue = new PriorityQueue(new Compara());
+        PriorityQueue<Integer> red = new PriorityQueue<Integer>(new Compara());
+        PriorityQueue<Integer> green = new PriorityQueue<Integer>(new Compara());
+        PriorityQueue<Integer> blue = new PriorityQueue<Integer>(new Compara());
         for(int i=0;i<N;i++){
             switch(S.charAt(i)){
                 case 'R':
