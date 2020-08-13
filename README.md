@@ -10,7 +10,7 @@
 **********************************************************************************
 
 ## Substring In a String
-- [KMP Algorithm](./KMPAlgorithm.java)
+- [KMP Algorithm](https://github.com/Saisreenivas/DS-Algos/blob/master/KMPAlgorithm.java)
 
 **********************************************************************************
 
@@ -18,10 +18,10 @@
 - Inorder Traversal
 - Preorder Traversal
 - Postorder Traversal
-- [Top View of a Binary Tree](https://https://github.com/Saisreenivas/DS-Algos/blob/master/TreeBottomView.java)
-- Bottom View of a Binary Tree
-- Left View of a Binary Tree
-- Right View of a Binary Tree
+- Top View of a Binary Tree
+- [Bottom View of a Binary Tree](./TreeBottomView.java)
+- [Left View of a Binary Tree](./TreeLeftView.java)
+- [Right View of a Binary Tree](./TreeRightView.java)
 - Level Order Traversal
 - Level Order Traversal Spiral
 - Height of a Binary Tree
