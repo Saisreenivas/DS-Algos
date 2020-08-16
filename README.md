@@ -34,7 +34,7 @@
 
 ## Binary Tree
 - [Maximum Path Sum in a Binary Tree](./Practice/MaximumPathSum.java)
-- [Constructing Binary Tree using Inorder and Preorder Traversal](./Practice/BinaryTreeUsingPreOrderAndInOrder.java)
+- [Constructing Binary Tree using Inorder and Preorder Traversal](./Practice/BinaryTreeUsingPreOrderAndInOrder.java) ([Optimised](./Practice/BinaryTreeUsingPreOrderAndInOrderOptimized.java))
 - [Constructing Binary Tree using Inorder and Postorder Traversal](./Practice/BinaryTreeUsingPostOrderAndInOrder.java)
 - [Symmetric Binary Tree](./Practice/SymmetricBinaryTree.java)
 - [Check If Binary Tree Is Mirror Of Itself](./Practice/CheckIfBinaryTreeIsMirrorOfItself.java)
