@@ -18,8 +18,8 @@
 - Inorder Traversal
 - Preorder Traversal
 - Postorder Traversal
-- Top View of a Binary Tree
-- [Bottom View of a Binary Tree](./TreeBottomView.java)
+- [Top View of a Binary Tree](#top-view-of-binary-tree)
+- [Bottom View of a Binary Tree](#bottom-view-of-binary-tree)
 - [Left View of a Binary Tree](./TreeLeftView.java)
 - [Right View of a Binary Tree](./TreeRightView.java)
 - [Level Order Traversal](./Practice/LevelOrderTraversal.java)
@@ -104,3 +104,61 @@
 - Palindrome Partitioning (MCM Variation)
 
 **********************************************************************************
+
+# Top View of Binary Tree
+
+Top view of a binary tree is the set of nodes visible when the tree is viewed from the top. Given a binary tree, print the top view of it. The output nodes can be printed in any order.
+
+A node x is there in output if x is the topmost node at its horizontal distance. Horizontal distance of left child of a node x is equal to horizontal distance of x minus 1, and that of right child is horizontal distance of x plus 1.
+
+          1
+       /     \
+      2       3
+     /  \    / \
+    4    5  6   7
+Top view of the above binary tree is
+4 2 1 3 7
+
+        1
+      /   \
+    2       3
+      \   
+        4  
+          \
+            5
+             \
+               6
+Top view of the above binary tree is
+2 1 3 6
+
+**********************************************************************************
+
+# Bottom View of Binary Tree
+
+Given a Binary Tree, we need to print the bottom view from left to right. A node x is there in output if x is the bottommost node at its horizontal distance. Horizontal distance of left child of a node x is equal to horizontal distance of x minus 1, and that of right child is horizontal distance of x plus 1.
+
+Examples:
+
+                      20
+                    /    \
+                  8       22
+                /   \      \
+              5      3      25
+                    / \      
+                  10    14
+
+For the above tree the output should be 5, 10, 3, 14, 25.
+
+If there are multiple bottom-most nodes for a horizontal distance from root, then print the later one in level traversal. For example, in the below diagram, 3 and 4 are both the bottom-most nodes at horizontal distance 0, we need to print 4.
+
+                   
+                      20
+                    /    \
+                  8       22
+                /   \    /   \
+              5      3 4     25
+                    / \      
+                  10    14 
+For the above tree the output should be 5, 10, 4, 14, 25.
+
+[Solution](./TreeBottomView.java)
