@@ -47,6 +47,7 @@
 - [Search Given Key in Binary Search Tree Recursive and Iterative](#search-given-key-in-binary-search-tree-recursive-and-iterative)
 - [Construct a Balanced Binary Search Tree Using given Keys](#construct-balanced-binary-search-tree-using-given-keys)
 - [Check is Binary Tree a Binary Search Tree or Not](#check-is-binary-tree-a-binary-search-tree-or-not)
+___
 - [Lowest Common Ancestor(LCA) of a Binary Search Tree](./Practice/LCAofBST.java)
 - [Find the inorder predecessor & successor of a given Key in a Binary Search Tree(BST)](./Practice/InorderPreSucOfAGivenKeyInBST.java)
 - [Floor](./Practice/FloorInaBST.java) and [Ceil](./Practice/CeilInaBST.java) in a Binary Search Tree(BST)
@@ -162,6 +163,7 @@ If there are multiple bottom-most nodes for a horizontal distance from root, the
 For the above tree the output should be 5, 10, 4, 14, 25.
 
 [Solution](./TreeBottomView.java)
+
 [Go to Top](#tree-traversal)
 **********************************************************************************
 
@@ -194,6 +196,7 @@ Input :
 Output :1 2 4 5 6
 
 [Solution](./TreeLeftView.java)
+
 [Go to Top](#tree-traversal)
 
 **********************************************************************************
@@ -212,6 +215,7 @@ Right view of following tree is 1 3 7 8
                      8
 
 [Solution](./TreeRightView.java)
+
 [Go to Top](#tree-traversal)
 
 **********************************************************************************
@@ -229,6 +233,7 @@ Level order traversal of a tree is breadth first traversal for the tree.
 Level order traversal of the above tree is 1 2 3 4 5
 
 [Solution](./Practice/LevelOrderTraversalSpiral.java)
+
 [Go to Top](#tree-traversal)
 
 **********************************************************************************
@@ -244,6 +249,7 @@ Write a function to print spiral order traversal of a tree. For below tree, func
           7     6   5   4
 
 [Solution](./TreeRightView.java)
+
 [Go to Top](#tree-traversal)
 
 **********************************************************************************
@@ -259,6 +265,7 @@ Given a binary tree, find height of it. Height of empty tree is 0 and height of 
       4   5
 
 [Solution](./Practice/HeightOfBinaryTree.java)
+
 [Go to Top](#tree-traversal)
 
 **********************************************************************************
@@ -270,6 +277,7 @@ The diameter of a tree (sometimes called the width) is the number of nodes on th
 ![Diameter of a Tree](./images/Diameter-Of-Binary-Tree.png)
 
 [Solution](./Practice/DiameterOfBinaryTree.java)
+
 [Go to Top](#tree-traversal)
 
 **********************************************************************************
@@ -287,6 +295,7 @@ The above height-balancing scheme is used in AVL trees. The diagram below shows 
 
 
 [Solution](./Practice/BinaryTreeBalancedOrNot.java)
+
 [Go to Top](#tree-traversal)
 
 **********************************************************************************
@@ -302,6 +311,7 @@ The LCA of n1 and n2 in T is the shared ancestor of n1 and n2 that is located fa
 ![lca](./images/lca.png)
 
 [Solution](./Practice/LCA.java)
+
 [Go to Top](#tree-traversal)
 
 **********************************************************************************
@@ -313,6 +323,7 @@ To identify if two trees are identical, we need to traverse both trees simultane
 
 
 [Solution](./Practice/IdenticalTrees.java)
+
 [Go to Top](#tree-traversal)
 
 **********************************************************************************
@@ -337,6 +348,7 @@ See below diagram for another example.
 ![max-path-sum](./images/max-path-sum.png)
 
 [Solution](./Practice/MaximumPathSum.java)
+
 [Go to Top](#binary-tree)
 
 **********************************************************************************
@@ -358,7 +370,9 @@ Output: Below binary tree
 ![binary-tree-using-inorder-and-preorder-traversal](./images/binary-tree-from-inorder-preorder-traversal.png)
 
 [Solution](./Practice/BinaryTreeUsingPreOrderAndInOrder.java)
+
 [Optimised Solution](./Practice/BinaryTreeUsingPreOrderAndInOrderOptimized.java)
+
 [Go to Top](#binary-tree)
 
 **********************************************************************************
@@ -395,6 +409,7 @@ Output : Root of below tree
          8
 
 [Solution](./Practice/BinaryTreeUsingPostOrderAndInOrder.java)
+
 [Go to Top](#binary-tree)
 
 **********************************************************************************
@@ -419,6 +434,7 @@ But the following is not:
      3    3
 
 [Solution](./Practice/SymmetricBinaryTree.java)
+
 [Go to Top](#binary-tree)
 
 **********************************************************************************
@@ -443,6 +459,7 @@ But the following is not:
      3    3
 
 [Solution](./Practice/CheckIfBinaryTreeIsMirrorOfItself.java)
+
 [Go to Top](#binary-tree)
 
 **********************************************************************************
@@ -472,6 +489,7 @@ The flattened tree should look like:
                  \
                   6
 [Solution](./Practice/FlattenABinaryTreeIntoLinkedList.java)
+
 [Go to Top](#binary-tree)
 
 **********************************************************************************
@@ -508,6 +526,7 @@ Output Tree
      D-->E-->F-->NULL
 
 [Solution](./Practice/NextRightPointersOfATree.java)
+
 [Go to Top](#binary-search-tree)
 
 **********************************************************************************
@@ -516,7 +535,9 @@ Output Tree
 ![Search Given Key in Binary Search Tree](./images/BST-Search-for-specific-key.png)
 
 [Recursive Solution](./Practice/SearchGivenKeyInBSTRecursive.java)
+
 [Iterative Solution](./Practice/SearchGivenKeyInBSTIterative.java)
+
 [Go to Top](#binary-search-tree)
 
 **********************************************************************************
@@ -528,6 +549,7 @@ Given an unsorted array of integers which represents binary search tree keys, co
 ![Array to Balanced BST](./images/Array-to-Balanced-BST.png)
 
 [Solution](./Practice/ConstructABalancedBSTUsingGivenKeys.java)
+
 [Go to Top](#binary-search-tree)
 
 **********************************************************************************
@@ -545,6 +567,7 @@ From the above properties it naturally follows that:
 ![binary-search-tree](./images/binary-tree-is-bst-or-not.gif)
 
 [Solution](./Practice/CheckIsBTaBSTorNot.java)
+
 [Go to Top](#binary-search-tree)
 
 **********************************************************************************
