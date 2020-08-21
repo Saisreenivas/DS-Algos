@@ -1,5 +1,4 @@
-# DS-Algos
-> # Algorithms and Datastructures
+# Algorithms and Datastructures
 1. [Substring In a String](#substring-in-a-string)
 2. [Tree Traversal](#tree-traversal)
 3. [Binary Tree](#binary-tree)
@@ -47,26 +46,26 @@
 - [Search Given Key in Binary Search Tree Recursive and Iterative](#search-given-key-in-binary-search-tree-recursive-and-iterative)
 - [Construct a Balanced Binary Search Tree Using given Keys](#construct-balanced-binary-search-tree-using-given-keys)
 - [Check is Binary Tree a Binary Search Tree or Not](#check-is-binary-tree-a-binary-search-tree-or-not)
-___
-- [Lowest Common Ancestor(LCA) of a Binary Search Tree](./Practice/LCAofBST.java)
-- [Find the inorder predecessor & successor of a given Key in a Binary Search Tree(BST)](./Practice/InorderPreSucOfAGivenKeyInBST.java)
-- [Floor](./Practice/FloorInaBST.java) and [Ceil](./Practice/CeilInaBST.java) in a Binary Search Tree(BST)
-- [Kth Smallest element in a Binary Search Tree(BST)](./Practice/KthSmallestInABST.java)
-- [Kth Largest element in a Binary Search Tree(BST)](./Practice/KthLargestInABST.java)
-- [Find a Pair with a Given Sum in Binary Search Tree(BST)](./Practice/FindAPairWithAGivenSumInBST.java)
-- [Binary Search Tree(BST) iterator](./Practice/BSTIterator.java)
-- [Size of the largest Binary Search Tree(BST) in a Binary Tree](./Practice/SizeOfLargestBSTInBT.java)
-- [Serialize and deserialize Binary Tree](./Practice/SerializeDeserializeABinaryTree.java)
+- [Lowest Common Ancestor(LCA) of a Binary Search Tree](#lowest-common-ancestor-of-a-binary-search-tree)
+- [Find the inorder predecessor & successor of a given Key in a Binary Search Tree(BST)](#find-the-inorder-predecessor-and-successor-of-a-given-key-in-a-binary-search-tree)
+- [Floor in a Binary Search Tree(BST)](#floor-in-a-binary-search-tree)
+- [Ceil in a Binary Search Tree(BST)](#ceil-in-a-binary-search-tree)
+- [Kth Smallest element in a Binary Search Tree(BST)](#kth-smallest-element-in-a-binary-search-tree)
+- [Kth Largest element in a Binary Search Tree(BST)](#kth-largest-element-in-a-binary-search-tree)
+- [Find a Pair with a Given Sum in Binary Search Tree(BST)](#find-a-pair-with-a-given-sum-in-binary-search-tree)
+- [Binary Search Tree(BST) iterator](#binary-search-tree-iterator)
+- [Size of the largest Binary Search Tree(BST) in a Binary Tree](#size-of-the-largest-binary-search-tree-in-a-binary-tree)
+- [Serialize and deserialize Binary Tree](#serialize-and-deserialize-binary-tree)
 
 **********************************************************************************
 
 ## Mixed Questions
-- [Binary Tree to Double Linked List](./Practice/BTtoDLL.java)
-- [Find median in a stream of running integers](./Practice/FindMedianInAStreamOfRunningIntegers.java)
-- [K-th largest element in a stream](./Practice/KthLargestElementInAStream.java)
-- [Distinct numbers in Window](./Practice/DistinctNumbersInAWindow.java)
-- [K-th largest element in an unsorted array](./Practice/KthLargestElementInUnsortedArray.java)
-- [Flood-fill Algorithm](./Practice/FloodFillAlgorithm.java)
+- [Binary Tree to Double Linked List](#binary-tree-to-double-linked-list)
+- [Find median in a stream of running integers](#find-median-in-a-stream-of-running-integers)
+- [K-th largest element in a stream](#kth-largest-element-in-a-stream)
+- [Distinct numbers in Window](#distinct-numbers-in-window)
+- [K-th largest element in an unsorted array](#kth-largest-element-in-an-unsorted-array)
+- [Flood-fill Algorithm](#flood-fill-algorithm)
 
 **********************************************************************************
 ->***Work in Progress***<-
@@ -570,4 +569,451 @@ From the above properties it naturally follows that:
 
 [Go to Top](#binary-search-tree)
 
+**********************************************************************************
+
+#### Lowest Common Ancestor of a Binary Search Tree
+
+Given values of two values n1 and n2 in a Binary Search Tree, find the Lowest Common Ancestor (LCA). You may assume that both the values exist in the tree.
+
+Examples:
+
+Tree: 
+![BST_LCA](./images/BST_LCA.gif)
+
+**Input:** LCA of 10 and 14
+**Output:**  12
+**Explanation:** 12 is the closest node to both 10 and 14 
+which is a ancestor of both the nodes.
+
+**Input:** LCA of 8 and 14
+**Output:**  8
+**Explanation:** 8 is the closest node to both 8 and 14 
+which is a ancestor of both the nodes.
+
+**Input:** LCA of 10 and 22
+**Output:**  20
+**Explanation:** 20 is the closest node to both 10 and 22 
+which is a ancestor of both the nodes.
+
+[Solution](./Practice/LCAofBST.java)
+
+[Go to Top](#binary-search-tree)
+
+**********************************************************************************
+#### Find the inorder predecessor and successor of a given Key in a Binary Search Tree
+
+Given a BST and a key. The task is to find the inorder successor and predecessor of the given key. In case, if either of predecessor or successor is not present, then print -1.
+
+Examples:
+
+Input:
+
+                50
+               /  \
+              /    \
+            30     70
+           / \     / \
+          /   \   /   \
+         20   40 60   80
+            key = 65
+Output: Predecessor : 60
+        Successor : 70
+
+Input:
+
+                50
+               /  \
+              /    \
+            30     70
+           / \     / \
+          /   \   /   \
+         20   40 60   80
+            key = 100
+Output: predecessor : 80
+        successor : -1
+Explanation: As no node in BST has key value greater than 100 so -1 is printed for successor.
+
+
+[Solution](./Practice/InorderPreSucOfAGivenKeyInBST.java)
+
+[Go to Top](#binary-search-tree)
+
+**********************************************************************************
+#### Floor in a Binary Search Tree
+Given a Binary Search Tree and a number x, find floor of x in the given BST.
+
+Input : x = 14 and root of below tree
+
+            10
+           /  \
+          5    15
+              /  \
+            12    30
+Output : 12
+
+Input : x = 15 and root of below tree
+
+            10
+           /  \
+          5    15
+              /  \
+            12    30
+Output : 15    
+
+[Floor Solution](./Practice/FloorInaBST.java)
+
+[Go to Top](#binary-search-tree)
+
+**********************************************************************************
+#### Ceil in a Binary Search Tree
+
+Ceil of a node in a given binary search tree is defined as a node that is equal to or nearest maximum node of the given node.
+
+Let’s take the below picture, which demonstrates the ceiling node of the input node.
+
+![ceil-of-bst](./images/ceil-of-bst.png)
+Node 24 is minimum node which is greater than given 20.
+
+[Ceil Solution](./Practice/CeilInaBST.java)
+
+[Go to Top](#binary-search-tree)
+**********************************************************************************
+
+#### Kth Smallest element in a Binary Search Tree
+
+Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
+
+**Example 1:**
+
+    Input: root = [3,1,4,null,2], k = 1
+       3
+      / \
+     1   4
+      \
+       2
+    Output: 1
+
+**Example 2:**
+
+    Input: root = [5,3,6,2,4,null,null,1], k = 3
+           5
+          / \
+         3   6
+        / \
+       2   4
+      /
+     1
+    Output: 3
+
+**Constraints:**
+- The number of elements of the BST is between 1 to 10^4.
+- You may assume k is always valid, 1 ≤ k ≤ BST's total elements.
+
+
+[Solution](./Practice/KthSmallestInABST.java)
+
+[Go to Top](#binary-search-tree)
+
+**********************************************************************************
+#### Kth Largest element in a Binary Search Tree
+
+Given a Binary Search Tree (BST) and a positive integer k, find the k’th largest element in the Binary Search Tree.
+For example, in the following BST, if k = 3, then output should be 14, and if k = 5, then output should be 10.
+
+![kth-largest-bst-image](./images/kth-largest-bst.gif)
+
+[Solution](./Practice/KthLargestInABST.java)
+
+[Go to Top](#binary-search-tree)
+
+**********************************************************************************
+#### Find a Pair with a Given Sum in Binary Search Tree
+
+Given a BST and a sum, find if there is a pair with given sum.
+
+Input : sum = 28
+        Root of below tree
+
+![bst image](./images/pair-with-given-sum-in-bst.png)
+
+Output : Pair is found (16, 12)
+
+[Solution](./Practice/FindAPairWithAGivenSumInBST.java)
+
+[Go to Top](#binary-search-tree)
+
+**********************************************************************************
+#### Binary Search Tree iterator
+
+Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
+
+Calling next() will return the next smallest number in the BST.
+
+ 
+Example:
+
+![bst tree](./images/bst-tree-iterator.png)
+
+
+    BSTIterator iterator = new BSTIterator(root);
+    iterator.next();    // return 3
+    iterator.next();    // return 7
+    iterator.hasNext(); // return true
+    iterator.next();    // return 9
+    iterator.hasNext(); // return true
+    iterator.next();    // return 15
+    iterator.hasNext(); // return true
+    iterator.next();    // return 20
+    iterator.hasNext(); // return false
+ 
+
+**Note:**
+
+- next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree.
+- You may assume that next() call will always be valid, that is, there will be at least a next smallest number in the BST when next() is called.
+
+[Solution](./Practice/BSTIterator.java)
+
+[Go to Top](#binary-search-tree)
+
+**********************************************************************************
+#### Size of the largest Binary Search Tree in a Binary Tree
+
+Given a Binary Tree, write a function that returns the size of the largest subtree which is also a Binary Search Tree (BST). If the complete Binary Tree is BST, then return the size of the whole tree.
+
+Examples:
+
+Input: 
+
+          5
+         /  \
+        2    4
+       /  \
+      1    3
+
+Output: 3 
+The following subtree is the 
+maximum size BST subtree 
+
+        2  
+       /  \
+      1    3
+
+
+Input:
+
+               50
+             /     \
+           30       60
+          /  \     /   \ 
+         5   20   45    70
+                      /  \
+                    65    80
+Output: 5
+The following subtree is the
+maximum size BST subtree 
+
+        60
+       /  \ 
+      45    70
+           /  \
+         65    80
+
+[Solution](./Practice/SizeOfLargestBSTInBT.java)
+
+[Go to Top](#binary-search-tree)
+
+**********************************************************************************
+#### Serialize and deserialize Binary Tree
+
+Serialization is to store tree in a file so that it can be later restored. The structure of tree must be maintained. Deserialization is reading tree back from file.
+
+![serialize and deserialize image](./images/serialize-and-deserialize.jpg)
+
+
+[Solution](./Practice/SerializeDeserializeABinaryTree.java)
+
+[Go to Top](#binary-search-tree)
+
+**********************************************************************************
+#### Binary Tree to Double Linked List
+
+Given a Binary Tree (BT), convert it to a Doubly Linked List(DLL) In-Place. The left and right pointers in nodes are to be used as previous and next pointers respectively in converted DLL. The order of nodes in DLL must be same as Inorder of the given Binary Tree. The first node of Inorder traversal (left most node in BT) must be head node of the DLL.
+
+![BT to DLL Image](./images/TreeToDLL.png)
+
+[Solution](./Practice/BTtoDLL.java)
+
+[Go to Top](#mixed-questions)
+**********************************************************************************
+#### Find median in a stream of running integers
+
+Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
+
+For example,
+[2,3,4], the median is 3
+
+[2,3], the median is (2 + 3) / 2 = 2.5
+
+Design a data structure that supports the following two operations:
+
+- void addNum(int num) - Add a integer number from the data stream to the data structure.
+- double findMedian() - Return the median of all elements so far.
+ 
+
+**Example:**
+
+    addNum(1)
+    addNum(2)
+    findMedian() -> 1.5
+    addNum(3) 
+    findMedian() -> 2
+
+[Solution](./Practice/FindMedianInAStreamOfRunningIntegers.java)
+
+[Go to Top](#mixed-questions)
+**********************************************************************************
+#### K-th largest element in a stream
+
+Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+
+Your KthLargest class will have a constructor which accepts an integer k and an integer array nums, which contains initial elements from the stream. For each call to the method KthLargest.add, return the element representing the kth largest element in the stream.
+
+**Example:**
+
+    int k = 3;
+    int[] arr = [4,5,8,2];
+    KthLargest kthLargest = new KthLargest(3, arr);
+    kthLargest.add(3);   // returns 4
+    kthLargest.add(5);   // returns 5
+    kthLargest.add(10);  // returns 5
+    kthLargest.add(9);   // returns 8
+    kthLargest.add(4);   // returns 8
+    
+**Note:**
+You may assume that nums' length ≥ k-1 and k ≥ 1.
+
+
+[Solution](./Practice/KthLargestElementInAStream.java)
+
+[Go to Top](#mixed-questions)
+**********************************************************************************
+#### Distinct numbers in Window
+
+Problem Description
+
+You are given an array of N integers, A1, A2 ,..., AN and an integer B. Return the of count of distinct numbers in all windows of size B.
+
+Formally, return an array of size **N-B+1** where **i'th** element in this array contains number of distinct elements in sequence Ai, Ai+1 ,..., Ai+B-1.
+
+**NOTE:** if **B > N**, return an empty array.
+
+
+
+**Input Format**
+First argument is an integer array A
+Second argument is an integer B.
+
+
+
+**Output Format**
+Return an integer array.
+
+
+
+**Example Input**
+Input 1:
+
+    A = [1, 2, 1, 3, 4, 3]
+    B = 3
+Input 2:
+
+    A = [1, 1, 2, 2]
+    B = 1
+
+
+**Example Output**
+Output 1:
+
+    [2, 3, 3, 2]
+Output 2:
+
+    [1, 1, 1, 1]
+
+
+**Example Explanation**
+Explanation 1:
+
+    A=[1, 2, 1, 3, 4, 3] and B = 3
+    All windows of size B are
+    [1, 2, 1]
+    [2, 1, 3]
+    [1, 3, 4]
+    [3, 4, 3]
+    So, we return an array [2, 3, 3, 2].
+Explanation 2:
+
+    Window size is 1, so the output array is [1, 1, 1, 1].
+
+[Solution](./Practice/DistinctNumbersInAWindow.java)
+
+[Go to Top](#mixed-questions)
+**********************************************************************************
+#### K-th largest element in an unsorted array
+
+Given an array and a number k where k is smaller than the size of the array, we need to find the k’th largest element in the given array. It is given that all array elements are distinct.
+
+**Examples:**
+
+    Input: arr[] = {7, 10, 4, 3, 20, 15}
+          k = 3
+    Output: 10
+
+    Input: arr[] = {7, 10, 4, 3, 20, 15}
+          k = 4
+    Output: 7
+
+[Solution](./Practice/KthLargestElementInUnsortedArray.java)
+
+[Go to Top](#mixed-questions)
+**********************************************************************************
+#### Flood-fill Algorithm
+
+In MS-Paint, when we take the brush to a pixel and click, the color of the region of that pixel is replaced with a new selected color. Following is the problem statement to do this task.
+Given a 2D screen, location of a pixel in the screen and a color, replace color of the given pixel and all adjacent same colored pixels with the given color.
+
+**Example:**
+
+    Input:
+          screen[M][N] = {{1, 1, 1, 1, 1, 1, 1, 1},
+                          {1, 1, 1, 1, 1, 1, 0, 0},
+                          {1, 0, 0, 1, 1, 0, 1, 1},
+                          {1, 2, 2, 2, 2, 0, 1, 0},
+                          {1, 1, 1, 2, 2, 0, 1, 0},
+                          {1, 1, 1, 2, 2, 2, 2, 0},
+                          {1, 1, 1, 1, 1, 2, 1, 1},
+                          {1, 1, 1, 1, 1, 2, 2, 1},
+                          };
+        x = 4, y = 4, newColor = 3
+    The values in the given 2D screen indicate colors of the pixels.
+    x and y are coordinates of the brush, newColor is the color that
+    should replace the previous color on screen[x][y] and all surrounding
+    pixels with same color.
+
+    Output:
+    Screen should be changed to following.
+          screen[M][N] = {{1, 1, 1, 1, 1, 1, 1, 1},
+                          {1, 1, 1, 1, 1, 1, 0, 0},
+                          {1, 0, 0, 1, 1, 0, 1, 1},
+                          {1, 3, 3, 3, 3, 0, 1, 0},
+                          {1, 1, 1, 3, 3, 0, 1, 0},
+                          {1, 1, 1, 3, 3, 3, 3, 0},
+                          {1, 1, 1, 1, 1, 3, 1, 1},
+                          {1, 1, 1, 1, 1, 3, 3, 1},
+                          };
+
+
+[Solution](./Practice/FloodFillAlgorithm.java)
+
+[Go to Top](#mixed-questions)
 **********************************************************************************
