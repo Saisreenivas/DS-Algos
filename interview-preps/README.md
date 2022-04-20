@@ -1,0 +1,7 @@
+- LinkedIn
+- Company's Website
+- Crunchbase
+- General Programming Questions
+- Architecture
+- Databases
+- Logic
