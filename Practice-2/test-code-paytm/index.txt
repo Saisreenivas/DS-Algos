@@ -1,0 +1,36 @@
+const secondHighestElement = (secondHighestIndex, inputIndex, input) => {
+    if (input[secondHighestIndex] >= input[inputIndex]) {
+        return secondHighestIndex;
+    } else {
+        secondHighestIndex = inputIndex;
+    }
+    return secondHighestIndex;
+}
+
+const main = () => {
+    // const input = [6,8,2,3,4,5,9,10];
+    const input = [7, 2, 1, 5, 3, 9];
+    // not an array, throw error
+    // loop to validate if every element is a number or not, if not then throw error
+    if (input.length <= 1) {
+        throw Error('Input Array should contain atleast 2 Elements.');
+    }
+    let highestIndex = 0;
+    let secondHighestIndex = 0;
+
+    for (let i = 1; i < input.length; i++) {
+        if (input[highestIndex] >= input[i]) {
+            secondHighestIndex = secondHighestElement(secondHighestIndex, i, input);
+        } else {
+            const tmp = highestIndex;
+            highestIndex = i;
+            secondHighestIndex = secondHighestElement(secondHighestIndex, tmp, input);
+        }
+    }
+
+    console.log("index: " + secondHighestIndex + ". Value: " + input[secondHighestIndex]);
+}
+
+
+
+main();
